@@ -1,0 +1,152 @@
+/*
+1.注释：<div> 是一个块级元素，也就是说，浏览器通常会在 div 元素前后放置一个换行符。
+2.关于display，display就是规定元素应该改生成框的类型
+    display:inline：将元素被显示称为内联元素
+    display:none:此元素不会被显示
+    display:block：此元素将显示为块级元素
+    display:inline-block:行内块元素，块级元素可以在一行展示  类似于 -  -  -  -  -  -
+                              
+3.侧边栏的时候，float：right;结果不浮动到右上；
+所以只能通过换两个次序，这样想 浮动只是在它该有的地方左右上下浮动。
+
+4.在定义两个栏的时候，左边的栏仅仅是通过规定宽度 固定的，没有找到其他的办法。
+
+
+*/
+*{
+    margin:0px 0px;
+
+}
+/*头部*/
+header{
+    position:relative;
+    background:#363636;
+    height:50px;
+    padding:5px 20px;
+    color:white;
+}
+
+#title{
+    position:absolute;
+    margin-right:20px;
+    padding-left:20px;
+    top:50%;
+    transform:translateY(-50%);
+    font-size:0.8em;
+}
+.navbar li{
+    float:left;/*设置浮动而不是inline,为了不丢失点*/
+    margin:0 15px;
+
+}
+.navbar{
+    position:absolute;
+    top:50%;
+    right:20px;
+    transform:translateY(-50%);
+    -webkit-transform:translateY(-50%);
+
+}
+a:link{
+    text-decoration:none;
+
+
+}
+a:hover{
+    color:#ccc;
+}
+a:visited{
+    color:white;
+}
+
+.container{
+    background-color:#ccc;
+    padding:20px;
+    overflow:hidden;
+}
+#content{
+    margin-left:10px;
+    width:65%;
+}
+
+.article{
+    background-color:white;
+    margin:20px 0;
+    padding:20px;
+}
+.article h3{
+    color:gray;
+    line-height:2em;
+}
+p.author{
+    color:gray;
+    font-size:0.8em;
+    line-height:3em;
+}
+p.content{
+    text-indent:2em;/*缩进*/
+    line-height:2em;/*行高*/
+    letter-spacing:1px;/*字间距*/
+}
+
+
+/*图片栏*/
+
+.pictures{
+    display:inline-block;
+    margin:10px;
+    text-align:center;
+    border:1px solid black;
+}
+.pictures img{
+    height:75%;
+    width:100px;
+    margin-top:10px;
+    display:block;/*消除div和img的空隙*/
+}
+
+/*侧边栏*/
+
+#sidebar{
+    background-color:white;
+    float:right;
+    margin:20px 10px;
+    padding:10px 20px;
+    width:30%;
+}
+#sidebar h2{
+    display:inline-block;
+    padding:5px 20px;
+    font-size:1em;
+    line-height:2em;
+    border-left: 3px lightgray solid;
+    margin-bottom:5px;
+}
+#sidebar div.line{
+    line-height:2em;
+}
+#sidebar .prompt{
+    display:inline-block;
+    width:30%;
+    padding-right:3px;
+    text-align:right;
+    font-size:0.8em;
+    vertical-align:top;
+    
+}
+#sidebar .hint{
+    display:inline-block;
+    color:gray;
+    margin-left:10px;
+    font-size:0.8em;
+    padding-botton:1.5em;
+}
+#submitBtn{
+    background-color:royalblue;
+    color:white;
+    width:95%;
+    height:40px;
+    margin:20px auto;
+    border-radius:10px;
+    border:2px solid gray;
+}

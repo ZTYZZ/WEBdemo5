@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>任务五:零基础HTML及CSS编码(二)</title>
+    <link href="task5.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+    <header class="header">
+        <div id="title">
+            <h2>任务五:零基础HTML及CSS编码(二)</h2>
+        </div>
+
+        <div class="navbar">
+            <ul>
+                <li>
+                    <a href="http://120.78.186.130">个站</a>
+                </li>
+                <li>
+                    <a href="http://120.78.186.130">发现</a>
+                </li>
+                <li>
+                    <a href="http://www.baidu.com">百度一下</a>
+                </li>
+                <li>
+                    <a href="http://www.google.com">股沟一下</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="container">
+        <div id="sidebar" class="solid_border">
+            <h2>这里以后是一个侧栏,这里是侧栏注册窗口</h2>
+            <form method="POST" action="">
+                <div class="line">
+                    <label class="prompt" for="username">请输入邮箱</label>
+                    <input type="text" id="username" name="email_address" value="这是一个文本输入框" />
+
+                </div>
+                <div class="line">
+                    <label class="prompt" for="password">请输入密码</label>
+                    <input type="password" id="password" name="email_password" value="123" placeholder="这是一个文本输入框" />
+
+                </div>
+                <div class="line">
+                    <label class="prompt" for="repeat_password">请重复输入密码</label>
+                    <input type="password" id="repeat-password" value="123" placeholder="这是一个文本输入框" />
+
+                </div>
+                <div class="line">
+                    <span class="prompt"></span>
+                    <label class="hint">密码请为6-16位英文数字</label>
+                </div>
+                <div class="line">
+                    <label class="prompt">性别</label>
+                    <input type="radio" name="gender" id="male" />
+                    <label for="male">男</label>
+                    <input type="radio" name="gender" id="female" />
+                    <label for="female">女</label>
+                </div>
+                <div class="line">
+                    <label class="prompt">城市</label>
+                    <select>
+                        <option value="北京">北京</option>
+                        <option value="上海">上海</option>
+                        <option value="杭州">杭州</option>
+                    </select>
+                </div>
+                <div class="line">
+                    <label class="prompt">爱好</label>
+                    <input type="checkbox" name="sport" id="sport" />
+                    <label for="sport">吃饭</label>
+                    <input type="checkbox" name="sleep" id="sleep" />
+                    <label for="sleep">睡觉</label>
+
+                </div>
+                <div class="line">
+                    <label class="prompt">个人描述</label>
+                    <textarea clos="100" rows="5">这是一个多行输入框,输入您的个人描述,至少一万字</textarea>
+                </div>
+                <div class="submitDiv">
+                    <input id="submitBtn" type="submit" name="submitBtn" value="确认提交" />
+                </div>
+            </form>
+        </div>
+
+        <div id="content">
+            <div class="article solid-border">
+                <h2>文章一级标题</h2>
+                <h3>文章二级标题</h3>
+                <p class="author">文章作者:知乎(侵删)&nbsp&nbsp文章发表时间:2029.10.10</p>
+                <p class="content">几年前我还在读
+                    <em>大学</em>， 接了学校一个比较大的
+                    <strong>网站</strong>做~项目开发测试弄得差不多准备上线， 学校信息中心的老师领我去机房部署（学校里的项目用的都是.net和php ，我们用的java,老师不太会弄，又懒得麻烦，就喊我们自己去弄）
+                    <br/>上面换行了,下面是一条横线
+                    <hr/>
+                    <br/> 到了 以后折腾将近大半个小时，最后重启服务准备走人了， 老师早就不耐烦出去抽烟了，留了一个在这值班的学妹满脸崇拜的看着我………啪！ 我难以按捺项目上线的激动以及在学妹年前耍帅的冲动，使劲按下了回车键。
+                    <br/>一下引用了一句话
+                    <br/>
+                    <br/>
+                    <q>1s</q>
+                    <q>2s</q>
+                    <q>3s</q>
+                    <q>4s</q>
+                    <q>5s</q>啪！啪！啪！啪！
+                    <br/> 机房四台显示器同时熄灭…所有的紧急疏散灯全部亮了起来嗡嗡！ 边上那台UPS红灯亮了开始供电…我们学校的核心机房停电了 诶( ꒪Д꒪)ノ，从此我在我们学校信息中心出了名一行代码让半个学校停电的大牛…┐(￣ー￣)┌
+                    <p>
+                        <img src="img/st94.png">
+                    </p>
+                    <blockquote>service tomcat restart</blockquote>上面是一段引用
+                    <address>这是我的地址:中国清华学院</address>
+
+                </p>
+            </div>
+
+            <div class="article solid-border">
+                <h2>另一篇文章一级标题</h2>
+                <h3>文章二级标题</h3>
+                <p class="author">文章作者:知乎&nbsp&nbsp文章发表时间:2030,03,03</p>
+                <p class="content">
+                    一日，几位同事聊起了几个常用的软件。
+                    <br/> A:x软件是开源的；
+                    <br/> B:y软件也是开源的；
+                    <br/> C:嗯，那个z软件也是开源的；
+                    <br/>
+                    <img src="img/st94.png" />
+                    <br/> ......
+                    <br/> 测试妹子:哇，开源这个公司好牛逼啊，开发了这么多软件...
+                    <br/> 大家:o(╯□╰)o
+
+                    <br/>
+
+                    <ul style="list-style:none;">
+                        <ul>
+                            <li>排名1</li>
+                            <li>排名2</li>
+                            <li>排名3</li>
+                        </ul>
+
+                    </ul>
+                </p>
+            </div>
+
+            <div class="article solid-border">
+                <h2>图片</h2>
+                <div class="pictures">
+                    <p>好看的图片</p>
+                    <img src="img/st94.png" />
+                </div>
+                <div class="pictures">
+                    <p>好看的图片</p>
+                    <img src="img/st94.png" />
+                </div>
+                <div class="pictures">
+                    <p>好看的图片</p>
+                    <img src="img/st94.png" />
+                </div>
+                <div class="pictures">
+                    <p>好看的图片</p>
+                    <img src="img/st94.png" />
+                </div>
+                <div class="pictures">
+                    <p>好看的图片</p>
+                    <img src="img/st94.png" />
+                </div>
+                <div class="pictures">
+                    <p>好看的图片</p>
+                    <img src="img/st94.png" />
+                </div>
+                <div class="pictures">
+                    <p>好看的图片</p>
+                    <img src="img/st94.png" />
+                </div>
+            </div>
+            <div class="article solid-border">
+                <h2>最后一篇文章一级标题</h2>
+                <h3>文章二级标题</h3>
+                <p class="author">文章作者:知乎&nbsp&nbsp发布时间:2039.2.2</p>
+                <ol>
+                    <li>排名1</li>
+                    <li>排名2</li>
+                    <li>排名3</li>
+                </ol>
+                <p>下面是一个表格,给表哥加一个border="1"</p>
+                <table border="1">
+                    <tr>
+                        <td>表头</td>
+                        <td>表头</td>
+                        <td>表头</td>
+                    </tr>
+                    <tr>
+                        <td>表内容单元</td>
+                        <td>表内容单元</td>
+                        <td>表内容单元</td>
+                    </tr>
+                    <tr>
+                        <td>表内容单元</td>
+                        <td colspan="2">1000</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+    </div>
+    <footer class="footer">版权所有C</footer>
+</body>
+
+</html>
